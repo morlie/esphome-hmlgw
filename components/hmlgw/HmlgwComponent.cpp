@@ -481,7 +481,7 @@ void HmlgwComponent::dump_config() {
                   this->port_);
     ESP_LOGCONFIG(TAG, "  KeepAlive: %s:%u",
 #if ESPHOME_VERSION_CODE >= VERSION_CODE(2021, 10, 0)
-                  esphome::network::get_ip_addresses().str().c_str(),
+                  esphome::network::get_ip_address().str().c_str(),
 #else
                   network_get_address().c_str(),
 #endif
